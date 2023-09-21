@@ -22,7 +22,7 @@ export default function SignupForm() {
       {!isSubmitted ? (
         <>
           <p className={styles.description}>
-            Sign up to receive access to our latest partnership and events.
+            Sign up to receive access to our latest partnerships and events.
           </p>
 
           <form action="#" className={styles.form} onSubmit={handleSubmit}>
