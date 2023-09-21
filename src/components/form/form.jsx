@@ -2,6 +2,10 @@ import { useState } from 'react';
 import Button from '../shared/button/button';
 import styles from './form.module.scss';
 import { createProfileAndAddToList } from '@/lib/klaviyo-lib';
+import bear from 'public/Bear.png';
+import lightning from 'public/Lightning.png';
+import sun from 'public/Sun.png';
+import Image from 'next/image';
 
 export default function SignupForm() {
   const [email, setEmail] = useState('');
@@ -22,7 +26,8 @@ export default function SignupForm() {
       {!isSubmitted ? (
         <>
           <p className={styles.description}>
-            Sign up to receive access to our latest partnerships and events.
+            Sign up to receive access to our latest lifestyle partnerships and
+            events.
           </p>
 
           <form action="#" className={styles.form} onSubmit={handleSubmit}>
@@ -40,6 +45,11 @@ export default function SignupForm() {
         <p className={styles.submitted}>
           Thank you for joining our community! We look forward to sharing
           exciting news and updates with you.
+          <div className={styles.icons}>
+            <Image src={bear} alt="" className={styles.icon} />
+            <Image src={lightning} alt="" className={styles.icon} />
+            <Image src={sun} alt="" className={styles.icon} />
+          </div>
         </p>
       )}
     </div>

@@ -6,7 +6,7 @@
   font-weight: bold;
   text-transform: uppercase;
   font-size: 30px;
-  margin: 50px 0 30px;
+  margin: 50px 0 20px;
   text-align: center;
 }
 
@@ -22,7 +22,7 @@
   border-bottom: 1px solid black;
   text-align: center;
   font-size: 18px;
-  width: 500px;
+  width: 450px;
   padding: 10px 0;
   &::placeholder {
     @include mixins.fontPrimary;
@@ -40,6 +40,21 @@
   @include mixins.fontPrimary;
   font-size: 18px;
   text-align: center;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.icon {
+  width: 50px;
+  &:nth-child(2) {
+    margin: 0 20px;
+    width: 43px;
+  }
 }
 
 @media screen and (max-width: variables.$mobile) {

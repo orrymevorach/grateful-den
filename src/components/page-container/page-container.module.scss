@@ -9,10 +9,17 @@
   background-color: variables.$beige;
   flex-direction: column;
   padding: 0 20px;
+  position: relative;
   @media screen and (max-width: variables.$mobile) {
     min-height: 100vh;
     height: auto;
-    padding-top: 50px;
+    padding-top: 65px;
     justify-content: flex-start;
   }
+}
+
+.instagram {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }

@@ -4,7 +4,7 @@
 .cardContainer {
   position: relative;
   display: flex;
-  // width: 500px;
+  width: 450px;
   @media screen and (max-width: variables.$mobile) {
     width: 100%;
   }
@@ -18,12 +18,37 @@
   border-radius: 5px;
 }
 
-.description {
+.bottomRow {
   position: absolute;
   bottom: 25px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
   @include mixins.fontPrimary;
   color: variables.$beige;
   text-transform: uppercase;
   text-align: center;
+}
+
+.lightning {
+  width: 20px;
+}
+
+$positionHorizontal: 40px;
+.lightningLeft {
+  margin-right: $positionHorizontal;
+}
+
+.lightningRight {
+  margin-left: $positionHorizontal;
+}
+
+.instagram {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
