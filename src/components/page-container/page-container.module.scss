@@ -12,6 +12,7 @@
   @media screen and (max-width: variables.$mobile) {
     min-height: 100vh;
     height: auto;
-    padding-top: 20px;
+    padding-top: 50px;
+    justify-content: flex-start;
   }
 }
