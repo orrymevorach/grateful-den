@@ -12,3 +12,18 @@
   font-family: 'DM Mono Medium';
   src: url('../../asset/DM_Mono/DMMono-Medium.ttf');
 }
+
+@font-face {
+  font-family: 'Gerstner Programm Regular';
+  src: url('../../asset/Gerstner Programm/Gerstner Programm Regular.otf');
+}
+
+@font-face {
+  font-family: 'Gerstner Programm Medium';
+  src: url('../../asset/Gerstner Programm/Gerstner Programm Medium.otf');
+}
+
+@font-face {
+  font-family: 'Gerstner Programm Light';
+  src: url('../../asset/Gerstner Programm/Gerstner Programm Light.otf');
+}

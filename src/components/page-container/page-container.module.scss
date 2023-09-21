@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fef7e5;
+  background-color: variables.$beige;
   flex-direction: column;
   padding: 0 20px;
   @media screen and (max-width: variables.$mobile) {

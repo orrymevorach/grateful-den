@@ -1,12 +1,29 @@
 @use '@variables' as variables;
+@use '@mixins' as mixins;
+
+.cardContainer {
+  position: relative;
+  display: flex;
+  // width: 500px;
+  @media screen and (max-width: variables.$mobile) {
+    width: 100%;
+  }
+}
 
 .card {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  width: 400px;
+  width: 100%;
   border-radius: 5px;
-  @media screen and (max-width: variables.$mobile) {
-    width: 100%;
-  }
+}
+
+.description {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  @include mixins.fontPrimary;
+  color: variables.$beige;
+  text-transform: uppercase;
+  text-align: center;
 }

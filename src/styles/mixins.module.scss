@@ -11,3 +11,15 @@
 @mixin fontPrimaryMedium {
   font-family: 'DM Mono Medium', 'Arial', sans-serif;
 }
+
+@mixin fontSecondary {
+  font-family: 'Gerstner Programm Regular', 'Arial', sans-serif;
+}
+
+@mixin fontSecondaryMedium {
+  font-family: 'Gerstner Programm Medium', 'Arial', sans-serif;
+}
+
+@mixin fontSecondaryLight {
+  font-family: 'Gerstner Programm Light', 'Arial', sans-serif;
+}
