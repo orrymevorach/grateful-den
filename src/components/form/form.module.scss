@@ -1,4 +1,5 @@
 @use '@mixins' as mixins;
+@use '@variables' as variables;
 
 .title {
   font-family: Arial, Helvetica, sans-serif;
@@ -37,4 +38,15 @@
 .submitted {
   @include mixins.fontPrimary;
   font-size: 18px;
+}
+
+@media screen and (max-width: variables.$mobile) {
+  .title {
+    font-size: 24px;
+  }
+  .email,
+  .description,
+  .submitted {
+    font-size: 16px;
+  }
 }
