@@ -1,0 +1,13 @@
+@use '@variables' as variables;
+
+@mixin fontPrimaryLight {
+  font-family: 'DM Mono Light', 'Arial', sans-serif;
+}
+
+@mixin fontPrimary {
+  font-family: 'DM Mono Regular', 'Arial', sans-serif;
+}
+
+@mixin fontPrimaryMedium {
+  font-family: 'DM Mono Medium', 'Arial', sans-serif;
+}

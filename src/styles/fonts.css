@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'DM Mono Regular';
+  src: url('../../asset/DM_Mono/DMMono-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'DM Mono Light';
+  src: url('../../asset/DM_Mono/DMMono-Light.ttf');
+}
+
+@font-face {
+  font-family: 'DM Mono Medium';
+  src: url('../../asset/DM_Mono/DMMono-Medium.ttf');
+}

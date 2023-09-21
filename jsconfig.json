@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"],
+      "public": ["./public/*"],
+      "@variables": ["./src/styles/variables.module.scss"],
+      "@mixins": ["./src/styles/mixins.module.scss"]
+    }
+  }
+}
