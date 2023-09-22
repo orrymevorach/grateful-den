@@ -5,12 +5,12 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 export default function PageContainer({ children }) {
   return (
     <div className={styles.page}>
-      <a href="https://www.instagram.com/thegratefulden/" target="_blank">
-        <FontAwesomeIcon
-          icon={faInstagram}
-          className={styles.instagram}
-          size="2x"
-        />
+      <a
+        href="https://www.instagram.com/thegratefulden/"
+        target="_blank"
+        className={styles.instagram}
+      >
+        <FontAwesomeIcon icon={faInstagram} size="2x" color="black" />
       </a>
       {children}
     </div>
