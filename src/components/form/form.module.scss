@@ -51,21 +51,6 @@
   text-align: center;
 }
 
-.icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.icon {
-  width: 30px;
-  &:nth-child(2) {
-    margin: 0 20px;
-    width: 25px;
-  }
-}
-
 @media screen and (max-width: variables.$mobile) {
   .title {
     font-size: 24px;

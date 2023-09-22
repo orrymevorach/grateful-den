@@ -2,10 +2,6 @@ import { useState } from 'react';
 import Button from '../shared/button/button';
 import styles from './form.module.scss';
 import { createProfileAndAddToList } from '@/lib/klaviyo-lib';
-import bear from 'public/Bear.png';
-import lightning from 'public/Lightning.png';
-import sun from 'public/Sun.png';
-import Image from 'next/image';
 
 export default function SignupForm() {
   const [email, setEmail] = useState('');
@@ -28,8 +24,7 @@ export default function SignupForm() {
           <p className={styles.description}>
             We are on a mission to build a social wellness club in Toronto. This
             will be a space where people can work, play, invest in their
-            wellness and find meaning with like-minded community. Sign up to
-            reciever access to our latest lifestyle partnerships and events.{' '}
+            wellness and find meaning with like-minded community.
           </p>
           <p className={styles.signUp}>
             Sign up to receive access to our latest lifestyle partnerships and
@@ -51,11 +46,6 @@ export default function SignupForm() {
         <p className={styles.submitted}>
           Thank you for joining our community! We look forward to sharing
           exciting news and updates with you.
-          <div className={styles.icons}>
-            <Image src={bear} alt="" className={styles.icon} />
-            <Image src={lightning} alt="" className={styles.icon} />
-            <Image src={sun} alt="" className={styles.icon} />
-          </div>
         </p>
       )}
     </div>
