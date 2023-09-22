@@ -12,14 +12,13 @@
 
 .description {
   @include mixins.fontSecondary;
-  letter-spacing: 1px;
   width: 800px;
   display: block;
   margin: 0 auto 50px;
 }
 
 .signUp {
-  @include mixins.fontPrimary;
+  @include mixins.fontSecondary;
   font-size: 18px;
   text-align: center;
   width: 800px;
@@ -34,7 +33,7 @@
   width: 450px;
   padding: 10px 0;
   &::placeholder {
-    @include mixins.fontPrimary;
+    @include mixins.fontSecondary;
   }
 }
 
@@ -46,7 +45,7 @@
 }
 
 .submitted {
-  @include mixins.fontPrimary;
+  @include mixins.fontSecondary;
   font-size: 18px;
   text-align: center;
 }

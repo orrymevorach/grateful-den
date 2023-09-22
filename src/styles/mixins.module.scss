@@ -14,12 +14,15 @@
 
 @mixin fontSecondary {
   font-family: 'Gerstner Programm Regular', 'Arial', sans-serif;
+  letter-spacing: 1px;
 }
 
 @mixin fontSecondaryMedium {
   font-family: 'Gerstner Programm Medium', 'Arial', sans-serif;
+  letter-spacing: 1px;
 }
 
 @mixin fontSecondaryLight {
   font-family: 'Gerstner Programm Light', 'Arial', sans-serif;
+  letter-spacing: 1px;
 }
