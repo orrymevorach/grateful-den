@@ -9,15 +9,15 @@ export async function createProfileAndAddToList({ email }) {
 
   if (errors) return errors[0].code;
 
-  // if (profile?.data) {
-  //   const response = await fetch('/api/add-profile-to-list', {
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //     },
-  //     body: JSON.stringify({ profileId: profile.data.id }),
-  //   });
-  //   return response;
-  // }
+  if (profile?.data) {
+    const response = await fetch('/api/add-profile-to-list', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ profileId: profile.data.id }),
+    });
+    return response;
+  }
   return;
 }
