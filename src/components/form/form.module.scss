@@ -2,7 +2,7 @@
 @use '@variables' as variables;
 
 .title {
-  @include mixins.fontSecondaryMedium;
+  @include mixins.fontPrimaryMedium;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 30px;
@@ -11,14 +11,14 @@
 }
 
 .description {
-  @include mixins.fontSecondary;
+  @include mixins.fontPrimary;
   width: 800px;
   display: block;
   margin: 0 auto 50px;
 }
 
 .signUp {
-  @include mixins.fontSecondary;
+  @include mixins.fontPrimary;
   font-size: 18px;
   text-align: center;
   width: 800px;
@@ -33,7 +33,7 @@
   width: 450px;
   padding: 10px 0;
   &::placeholder {
-    @include mixins.fontSecondary;
+    @include mixins.fontPrimary;
   }
 }
 
@@ -45,7 +45,7 @@
 }
 
 .submitted {
-  @include mixins.fontSecondary;
+  @include mixins.fontPrimary;
   font-size: 18px;
   text-align: center;
 }

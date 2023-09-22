@@ -20,7 +20,7 @@
 }
 
 .description {
-  @include mixins.fontSecondary;
+  @include mixins.fontPrimary;
   color: variables.$beige;
   text-transform: uppercase;
   text-align: center;
