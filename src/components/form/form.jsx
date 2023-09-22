@@ -26,6 +26,12 @@ export default function SignupForm() {
       {!isSubmitted ? (
         <>
           <p className={styles.description}>
+            We are on a mission to build a social wellness club in Toronto. This
+            will be a space where people can work, play, invest in their
+            wellness and find meaning with like-minded community. Sign up to
+            reciever access to our latest lifestyle partnerships and events.{' '}
+          </p>
+          <p className={styles.signUp}>
             Sign up to receive access to our latest lifestyle partnerships and
             events.
           </p>

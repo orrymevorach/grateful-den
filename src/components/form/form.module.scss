@@ -11,9 +11,17 @@
 }
 
 .description {
+  @include mixins.fontSecondary;
+  width: 800px;
+  display: block;
+  margin: 0 auto 50px;
+}
+
+.signUp {
   @include mixins.fontPrimary;
   font-size: 18px;
   text-align: center;
+  width: 800px;
 }
 
 .email {
@@ -62,10 +70,12 @@
     font-size: 24px;
   }
   .email,
-  .description,
+  .signUp,
   .submitted {
     font-size: 16px;
   }
+  .description,
+  .signUp,
   .email {
     width: 100%;
   }
