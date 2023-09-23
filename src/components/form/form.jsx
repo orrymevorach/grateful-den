@@ -7,13 +7,23 @@ export default function SignupForm() {
   const [email, setEmail] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState('');
 
   const handleSubmit = async e => {
     e.preventDefault();
     setIsLoading(true);
-    await createProfileAndAddToList({ email });
+    const response = await createProfileAndAddToList({ email });
     setIsLoading(false);
-    setIsSubmitted(true);
+    if (response.error) {
+      setError(response.error.detail);
+    } else {
+      setIsSubmitted(true);
+    }
+  };
+
+  const handleChange = e => {
+    setError('');
+    setEmail(e.target.value);
   };
 
   return (
@@ -37,8 +47,9 @@ export default function SignupForm() {
               className={styles.email}
               placeholder="Email"
               value={email}
-              onChange={e => setEmail(e.target.value)}
+              onChange={handleChange}
             />
+            {error && <p className={styles.error}>{error}</p>}
             <Button isLoading={isLoading}>Sign me up!</Button>
           </form>
         </>

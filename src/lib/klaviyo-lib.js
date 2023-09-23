@@ -7,7 +7,7 @@ export async function createProfileAndAddToList({ email }) {
     body: JSON.stringify({ email }),
   }).then(res => res.json());
 
-  if (errors) return errors[0].code;
+  if (errors) return { error: errors[0] };
 
   if (profile?.data) {
     const response = await fetch('/api/add-profile-to-list', {

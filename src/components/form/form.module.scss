@@ -49,6 +49,12 @@
   text-align: center;
 }
 
+.error {
+  @include mixins.fontPrimary;
+  color: red;
+  margin-top: 10px;
+}
+
 @media screen and (max-width: variables.$mobile) {
   .title {
     font-size: 24px;

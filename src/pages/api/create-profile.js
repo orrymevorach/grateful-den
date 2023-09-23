@@ -1,6 +1,5 @@
 export default async function handler(req, res) {
   try {
-    console.log('hey dude!');
     const { email } = req.body;
     const date = new Date();
     const revision = date.toISOString().split('T')[0];
