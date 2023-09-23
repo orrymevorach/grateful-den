@@ -1,6 +1,6 @@
 import styles from './card.module.scss';
 import Image from 'next/image';
-import logo from 'public/logo.JPEG';
+import logo from 'public/logo.jpg';
 import bear from 'public/Bear.png';
 import lightning from 'public/Lightning.png';
 import sun from 'public/Sun.png';
